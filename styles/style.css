@@ -1,0 +1,126 @@
+/*#000000 #2B8EAD #333333 #6F98A8 #FFFFFF #BFBFBF #EFEFEF #2F454E #72C3DC */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: #efefef;
+}
+h3 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-style: italic;
+}
+.container {
+  max-width: 1200px;
+  margin: 1rem auto;
+  display: flex;
+  gap: 1rem;
+}
+#box-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+}
+.box {
+  height: 200px;
+  color: #ffffff;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-wrapper {
+  width: 40%;
+  align-items: center;
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+button {
+  width: 200px;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2.5rem;
+  background-color: #72c3dc;
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: 0px 8px 0px 0px #2b8ead;
+}
+button:active {
+  transform: translate(0, 8px);
+  box-shadow: none;
+}
+
+.light-blue {
+  background-color: #6f98a8;
+}
+.sky-color {
+  background-color: #2b8ead;
+}
+.dark-blue {
+  background-color: #2f454e;
+}
+.light {
+  background-color: #bfbfbf;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-color: #ffffff;
+  }
+  h3 {
+    background-color: #333333;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    font-weight: 100;
+    color: #ffffff;
+  }
+  .container {
+    margin: 0 auto;
+    flex-direction: column-reverse;
+  }
+  #box-wrapper {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: auto;
+  }
+  .box {
+    height: auto;
+    font-size: 1.25rem;
+    height: 40px;
+    background-color: #efefef;
+    color: #000000;
+  }
+  .light-blue {
+    border-left: 5px solid #6f98a8;
+  }
+  .sky-color {
+    border-left: 5px solid #2b8ead;
+  }
+  .dark-blue {
+    border-left: 5px solid #2f454e;
+  }
+  .light {
+    border-left: 5px solid #bfbfbf;
+  }
+
+  .button-wrapper {
+    margin: 1rem auto;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    width: 100px;
+  }
+}
